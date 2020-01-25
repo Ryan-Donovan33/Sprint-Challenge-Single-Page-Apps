@@ -4,6 +4,8 @@ import Header from './components/Header.js';
 import WelcomePage from './components/WelcomePage';
 import { Route } from 'react-router-dom';
 import CharacterCard from './components/CharacterCard.js';
+import SearchForm from './components/SearchForm';
+import CharacterList from './components/CharacterList.js';
 
 export default function App() {
 	const [ charac, setCharac ] = useState([]);
@@ -25,9 +27,11 @@ export default function App() {
 				<WelcomePage charac={charac} setCharac={setCharac} />
 			</Route>
 
-			<Route path="/characters/:id">
-				<CharacterCard charac={charac} />
+			<Route path="/character-list">
+				<CharacterList charac={charac} setCharac={setCharac} />
 			</Route>
+
+			{/* <Route path="/characters/:id" render={(props) => <CharacterList {...props} charac={charac} />} /> */}
 		</main>
 	);
 }

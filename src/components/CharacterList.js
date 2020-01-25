@@ -27,6 +27,7 @@ export default function CharacterList() {
 	return (
 		<section className="character-list">
 			<RnM>
+				{/* passing el over to characterCard component using props  */}
 				{characters.map((el) => {
 					return (
 						<Link key={el.id} to={`/characters/${el.id}`}>
