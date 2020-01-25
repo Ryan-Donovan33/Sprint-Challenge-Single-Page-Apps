@@ -1,14 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 
-function CharacterCard({ charac }) {
-	if (!charac) {
+const ChCard = styled.div`color: white;`;
+function CharacterCard({ el }) {
+	if (!el) {
 		return <h2>Loading...</h2>;
 	}
 	return (
 		<div>
-			<p>Name: {charac.name}</p>
-			<p>Status: {charac.status}</p>
-			<p>Gender: {charac.gender}</p>
+			<p>Name: {el.name}</p>
+			<p>Status: {el.status}</p>
+			<p>Gender: {el.gender}</p>
 		</div>
 	);
 }
