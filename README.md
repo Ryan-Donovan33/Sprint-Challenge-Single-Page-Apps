@@ -29,6 +29,11 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 > Answer:
 
+- There will be less data to process since the change will simply be adjusting the state.
+- It allows for easy transitions between views. 
+- The client does not need to acces the server as often when using client side routing.
+
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
