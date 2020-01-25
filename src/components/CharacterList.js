@@ -13,6 +13,7 @@ export default function CharacterList() {
 		Axios.get('https://rickandmortyapi.com/api/character/')
 			.then((res) => {
 				setCharacters(res.data);
+				console.log(setCharacters);
 			})
 			.catch((error) => {
 				console.log('Server Error', error);

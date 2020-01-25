@@ -1,5 +1,11 @@
-import React from "react";
+import React from 'react';
 
-export default function CharacterCard() {
-  return <span>todo: character</span>;
+function CharacterCard() {
+	return (
+		<div>
+			<p>Fill in Card info </p>
+		</div>
+	);
 }
+
+export default CharacterCard;
