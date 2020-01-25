@@ -1,9 +1,15 @@
 import React from 'react';
 
-function CharacterCard() {
+function CharacterCard({ charac }) {
+	if (!charac) {
+		return <h2>Loading...</h2>;
+	}
 	return (
 		<div>
-			<p>Fill in Card info </p>
+			<p>{charac.id}</p>
+			<p>{charac.name}</p>
+			<p>{charac.status}</p>
+			<p>{charac.gender}</p>
 		</div>
 	);
 }
