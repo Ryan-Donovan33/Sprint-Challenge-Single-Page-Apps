@@ -12,15 +12,15 @@ export default function CharacterList() {
 			.then((res) => setCharacters(res.data.results))
 			.catch((err) => console.log('Server Error', err));
 	}, []);
-	console.log(characters);
+	// console.log(characters);
 
 	return (
 		<section className="character-list">
 			<h2>
 				{characters.map((el) => {
 					return (
-						<Link key={el.id} to={`/characterCard/${el.id}`}>
-							<CharacterCard />
+						<Link key={el.id} to={`/characters/${el.id}`}>
+							<CharacterCard el={el} />
 						</Link>
 					);
 				})}

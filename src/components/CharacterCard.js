@@ -1,15 +1,15 @@
 import React from 'react';
 
-function CharacterCard({ charac }) {
-	if (!charac) {
+function CharacterCard(props) {
+	if (!props) {
 		return <h2>Loading...</h2>;
 	}
 	return (
 		<div>
-			<p>{charac.id}</p>
-			<p>{charac.name}</p>
-			<p>{charac.status}</p>
-			<p>{charac.gender}</p>
+			<p>{props.id}</p>
+			<p>Name: {props.name}</p>
+			<p>Status: {props.status}</p>
+			<p>Gender: {props.gender}</p>
 		</div>
 	);
 }
