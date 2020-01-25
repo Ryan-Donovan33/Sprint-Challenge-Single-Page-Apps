@@ -2,6 +2,19 @@ import React, { useEffect, useState } from 'react';
 import CharacterCard from './CharacterCard';
 import Axios from 'axios';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+const RnM = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: navy;
+	color: white;
+	padding: 2%;
+	margin: 2%;
+	width: 50%;
+	font-size: 1.2rem;
+`;
 
 export default function CharacterList() {
 	// TODO: Add useState to track data from useEffect
@@ -16,7 +29,7 @@ export default function CharacterList() {
 
 	return (
 		<section className="character-list">
-			<h2>
+			<RnM>
 				{characters.map((el) => {
 					return (
 						<Link key={el.id} to={`/characters/${el.id}`}>
@@ -24,7 +37,7 @@ export default function CharacterList() {
 						</Link>
 					);
 				})}
-			</h2>
+			</RnM>
 		</section>
 	);
 }
