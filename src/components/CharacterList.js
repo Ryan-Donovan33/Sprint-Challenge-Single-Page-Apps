@@ -8,12 +8,9 @@ const RnM = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: navy;
-	color: white;
 	padding: 2%;
 	margin: 2%;
-	width: 50%;
-	font-size: 1.2rem;
+	width: 80%;
 `;
 
 export default function CharacterList() {
