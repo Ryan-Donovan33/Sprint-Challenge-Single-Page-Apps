@@ -1,7 +1,8 @@
 import React from 'react';
-import CharacterList from './CharacterList';
+import Card from './Card';
 import { Route } from 'react-router-dom';
 import SearchForm from './SearchForm';
+import CharacterList from './CharacterList';
 
 export default function WelcomePage(props) {
 	const router = (e) => {
@@ -17,7 +18,7 @@ export default function WelcomePage(props) {
 					<SearchForm />
 				</Route>
 				<CharacterList />
-				<button onclick={router}> Character List</button>
+				<button onClick={router}> Character List</button>
 			</header>
 		</section>
 	);
