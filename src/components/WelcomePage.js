@@ -18,7 +18,7 @@ export default function WelcomePage(props) {
 					<SearchForm />
 				</Route>
 				<CharacterList />
-				<button onClick={router}> Character List</button>
+				{/* <button onClick={router}> Character List</button> */}
 			</header>
 		</section>
 	);
