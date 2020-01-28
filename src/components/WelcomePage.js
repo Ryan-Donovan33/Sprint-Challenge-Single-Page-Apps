@@ -9,6 +9,12 @@ const Sect = styled.section`
 	align-items: center;
 `;
 
+const Head = styled.header`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
+
 export default function WelcomePage(props) {
 	// const router = (e) => {
 	// 	e.preventDefault();
@@ -16,13 +22,13 @@ export default function WelcomePage(props) {
 	// };
 	return (
 		<Sect>
-			<header>
+			<Head>
 				<h1>Welcome to the ultimate fan site!</h1>
 				<img className="main-img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="rick" />
 				<Route>
 					<CharacterList />
 				</Route>
-			</header>
+			</Head>
 		</Sect>
 	);
 }
