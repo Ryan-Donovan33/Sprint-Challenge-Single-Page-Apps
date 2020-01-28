@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import SearchForm from './SearchForm';
 import CharacterList from './CharacterList';
 import styled from 'styled-components';
 
@@ -20,8 +19,6 @@ export default function WelcomePage(props) {
 			<header>
 				<h1>Welcome to the ultimate fan site!</h1>
 				<img className="main-img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="rick" />
-
-				{/* <Link to="/character-page">Character</Link> */}
 				<Route>
 					<CharacterList />
 				</Route>

@@ -3,6 +3,7 @@ import CharacterCard from './CharacterCard';
 import Axios from 'axios';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import SearchForm from './SearchForm';
 
 const RnM = styled.div`
 	display: flex;
@@ -26,6 +27,7 @@ export default function CharacterList() {
 
 	return (
 		<section className="character-list">
+			<SearchForm characters={characters} setCharacters={setCharacters} />
 			<RnM>
 				{characters.map((el) => {
 					return (
