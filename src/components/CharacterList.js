@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CharacterCard from './CharacterCard';
+import Card from './Card';
 import Axios from 'axios';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -29,7 +30,7 @@ export default function CharacterList() {
 			<RnM>
 				{characters.map((el) => {
 					return (
-						<Link key={el.id} to={`/characters/${el.id}`}>
+						<Link key={el.id} to={`/card/${el.id}`}>
 							<CharacterCard el={el} />
 						</Link>
 					);
