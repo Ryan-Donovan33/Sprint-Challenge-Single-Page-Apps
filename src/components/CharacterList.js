@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Card from './Card';
+import CharacterCard from './CharacterCard';
 import Axios from 'axios';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -27,11 +27,10 @@ export default function CharacterList() {
 	return (
 		<section className="character-list">
 			<RnM>
-				{/* passing el over to characterCard component using props  */}
 				{characters.map((el) => {
 					return (
 						<Link key={el.id} to={`/characters/${el.id}`}>
-							<Card el={el} />
+							<CharacterCard el={el} />
 						</Link>
 					);
 				})}
