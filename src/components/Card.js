@@ -6,8 +6,8 @@ function Card({ charac, setCharac }) {
 	const [ card, setCard ] = useState({});
 
 	useEffect(() => {
-		const actualCard = charac.filter((oneCharacter) => {
-			return oneCharacter.id == id;
+		const actualCard = charac.filter((card) => {
+			return card.id == id;
 		});
 		setCard(actualCard[0]);
 	}, []);
@@ -19,9 +19,9 @@ function Card({ charac, setCharac }) {
 	}
 	return (
 		<div>
-			<h1>Name: {charac.name}</h1>
-			<p>Status: {charac.status}</p>
-			<p>Gender: {charac.gender}</p>
+			<h1>Name: {card.name}</h1>
+			<p>Status: {card.status}</p>
+			<p>Gender: {card.gender}</p>
 		</div>
 	);
 }
