@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import CharacterCard from './CharacterCard';
-import Card from './Card';
 import Axios from 'axios';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';

@@ -1,6 +1,5 @@
 import React from 'react';
-import Card from './Card';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import SearchForm from './SearchForm';
 import CharacterList from './CharacterList';
 import styled from 'styled-components';
